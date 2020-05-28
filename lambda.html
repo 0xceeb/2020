@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>KOTLSEC Research Overview</title>
+<style>
+
+body {
+	background-color: #0c0c0c;
+	padding-left: 5%;
+	padding-right: 5%;
+	color: #d2d2d2;
+	font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-weight: 150;
+}
+
+div {
+		display: inline-block;
+		vertical-align: top;
+}
+
+a:link {
+    color: #00c0ff;
+}
+
+a:visited {
+    color: #0091b5;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: blue;
+}
+
+#upcoming {
+    font-size: 1.2em;
+}
+
+.box {
+	border: 2px solid white;
+	margin-top: 10px;
+	padding: 3px 15px 15px 15px;
+	border-radius: 10px;
+	background-color: #1b1b1b;
+}
+
+#contact {
+	float: right;
+}
+
+.contactlist {
+	list-style: none;
+	margin: 5px 0 3px 0;
+}
+
+.avatar {
+	width: 100px;
+	//position: absolute;
+	float: right;
+	#left: -110px;
+}
+
+#attack {
+	width: 50%;
+    margin-right: 20px;
+}
+
+#automate {
+	float: right;
+	width: 50%;
+}
+
+#misc {
+	margin-top: 40px;
+	width: 97.5%;
+}
+
+#middle {
+    display: inline-flex;
+	width: 100%;
+}
+
+.off {
+   display:none;
+}
+
+.on {
+   display:block;
+}
+
+#bio div {
+  display:none;
+}
+
+#bio:target div, #bio:target .off {
+  display:block;
+}
+
+#bio:target .on {
+  display:none;
+}
+
+#showtalks div {
+  display:none;
+}
+
+#showtalks:target div, #showtalks:target .off {
+  display:block;
+}
+
+#showtalks:target .on {
+  display:none;
+}
+
+li {
+	margin: 5px 0 3px 0;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<div id="intro">
+<h2>KOTLSEC research overview</h2>
+</div>
+<div id="contact">
+<div class="box">
+<!--<img class="avatar" src='avatar.png'/>-->
+Contact
+<ul class="contactlist">
+<li><img width="20px" src='twitter123.png'/><a href="https://twitter.com/kotlsec">@kotlsec</a></li>
+<li><span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip1');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip1" dir="rtl">cesltok</bdo>@gmail.com</span></li>
+<li><span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip2');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip2" dir="rtl">cespoq</bdo>@yandex.ru</span></li>
+</ul>
+Blogs
+<ul class="contactlist">
+<div id="middle">
+    <div id="attack" class="box">
+    <h3>lambda functions</h3>
+    <ul>
+        <li><a href="/basiclogin.html">Basic login and registration using lambda and s3 implementation</a></li>
+        <!--<li><a href="https://portswigger.net/research/practical-web-cache-poisoning">Practical Web Cache Poisoning: Redefining 'Unexploitable'</a> (<a href="https://www.youtube.com/watch?v=j2RrmNxJZ5c">recording</a>)</li>
+        <li><a href="https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface">Cracking the Lens: Targeting HTTP's Hidden Attack-Surface</a> (<a href="https://www.youtube.com/watch?v=zP4b3pw94s0">recording</a>)</li>
+        <li><a href="https://portswigger.net/research/exploiting-cors-misconfigurations-for-bitcoins-and-bounties">Exploiting CORS Misconfigurations for Bitcoins and Bounties</a>  (<a href="https://www.youtube.com/watch?v=wgkj4ZgxI4c&list=PLpr-xdpM8wG8RHOguwOZhUHkKiDeWpvFp&index=31">recording</a>)</li>
+        <li><a href="https://portswigger.net/research/server-side-template-injection">Server-Side Template Injection</a> (<a href="https://www.youtube.com/watch?v=3cT0uE7Y87s">recording</a>)</li>
+        <li><a href="http://contextis.co.uk/blog/comma-separated-vulnerabilities/">CSV Formula Injection</a></li>
+        <li><a href="https://www.skeletonscribe.net/2013/05/practical-http-host-header-attacks.html">Practical HTTP Host header attacks</a></li>-->
+    </ul>
+    </div>
+
+   <!-- <div id="automate" class="box">
+    <h3>Exploitation</h3>
+    <<ul>
+        <li><a href="https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack">Turbo Intruder: Embracing the billion-request attack</a> (<a href="https://www.youtube.com/watch?v=vCpIAsxESFY">recording</a>)</li>
+        <li><a href="https://github.com/PortSwigger/param-miner">Param Miner</a></li>
+    	<li><a href="https://portswigger.net/research/backslash-powered-scanning-hunting-unknown-vulnerability-classes">Backslash Powered Scanner: Automating Human Intuition</a> (<a href="https://www.youtube.com/watch?v=EPmjl7q1-n4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=3">recording</a>)</li>
+        <li><a href="https://portswigger.net/research/hunting-asynchronous-vulnerabilities">Hunting Asynchronous Vulnerabilities</a> (<a href="https://www.youtube.com/watch?v=ha6LD1-RiJU">recording</a>)</li>
+        <li><a href="https://github.com/albinowax/ActiveScanPlusPlus">ActiveScan++</a> (<a href="https://www.youtube.com/watch?v=dxo6-niEtyE">recording</a>)</li>
+    </ul>
+    <br/>
+    </div>-->
+</div>
+
+<p>
+You can contact me via <a href="https://twitter.com/kotlsec">@kotlsec</a> on Twitter, <span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip3');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip3" dir="rtl">cespoq</bdo>@yandex.ru</span> or
+<span style="color: #00c0ff;" onmouseover="e=document.getElementById('flip4');if(e.dir!='ltr'){e.dir='ltr';e.innerHTML=e.innerHTML.split('').reverse().join('');}"><bdo id="flip4" dir="rtl">cesltok</bdo>@gmail.com</span><br/>
+<p>
+   <!--This site template is inspired by albinowax's https://skeletonscribe.net-->
+</div>
+
+</body>
+</html>
